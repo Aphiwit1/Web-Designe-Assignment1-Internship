@@ -18,70 +18,81 @@
     crossorigin="anonymous"></script>
 
 
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <!-- bootstrap -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- bootstrap -->
 </head>
 
 <style>
-
-  body{
-    margin:0;
-    padding:0;
+  body {
+    margin: 0;
+    padding: 0;
   }
-  .side-nav{
+
+  .side-nav {
     position: absolute;
     width: 100%;
-    background-color: #666;
+    background-color:#D3D3D3;
     height: 100vh;
     z-index: 3;
-    padding-top: 44px;
+    padding-top: 10px;
   }
 
   .side-nav ul {
     list-style: none;
-    padding:0;
+    padding: 0;
     margin: 0;
   }
+
   .side-nav ul li {
-    padding: 10px 20px;
-    border-bottom:1px solid #333;
+    padding: 10px 0px;
+    /* border-bottom: 1px solid #333; */
+    background-color: #D3D3D3;
   }
+
   .side-nav ul li a {
     color: #fff;
     text-decoration: none;
   }
+
   .side-nav ul li a i {
     color: #333;
   }
-  @media screen and (min-width:600px){
-    .side-nav{
+
+  @media screen and (min-width:600px) {
+    .side-nav {
       width: 50px;
     }
+
     .side-nav ul li {
       text-align: center;
     }
+
     .header div {
-      padding-left:70px;
-      padding-top:15px;
+      padding-left: 70px;
+      padding-top: 15px;
     }
   }
 
 
-  .header { 
-   position: absolute;
-   height: 60px;
-   width: 100%;
-   background-color: #999;
+  .header {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    background-color: #FAFAFA;
+ 
   }
 
-  #body-content{
+  #body-content {
     padding-top: 70px;
   }
-  #content-header{
-      text-align: center;
-      color: #eaeeef;
+
+  #content-header {
+    text-align: center;
+    color: #eaeeef;
   }
-  #content1{
+
+  #content1 {
     border: 2px solid red;
     border-radius: 5px;
     text-align: center;
@@ -89,122 +100,167 @@
 </style>
 
 <div class="side-nav">
-    <nav>
-      <ul>
-        <li>
-          <a href="#">
-            <span><i class="fa fa-user"></i></span>
-          </a>
-        </li>
-
+  <nav>
+    <ul>
         <li>
             <a href="#">
-              <span><i class="fa fa-envelope"></i></span>
+              <span><i class="fa fa-globe fa-2x" style="color:green; "></i></span>
             </a>
           </li>
 
-          <li>
-              <a href="#">
-                <span><i class="fa fa-envelope"></i></span>
-              </a>
-            </li>
+      <li>
+        <a href="#">
+          <span><i class="fa fa-list-ul"></i></span>
+        </a>
+      </li>
 
-            <li>
-                <a href="#">
-                  <span><i class="fa fa-credit-card-alt" style="padding-top: 390px;"></i></span>
-                </a>
-              </li>
-      </ul>
-    </nav>
+      <li>
+        <a href="#">
+          <span><i class="fa fa-file" aria-hidden="true" style="padding-top: 30px;"></i></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span><i class="fa fa-folder-open"></i></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#">
+          <span><i class="fa fa-credit-card-alt" style="padding-top: 490px;"></i></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </div>
 
 <div class="header">
-    <div class="container-fluid">
-        <button class="btn btn-primary btn-sm"><i class="fa fa-file"></i>  Object depositdde</button>
-    </div>
+  <div class="container-fluid">
+    <button class="btn btn-success btn-sm"><i class="fa fa-file"></i> Object depositdde</button>
+  </div>
 </div>
 
 <body>
-  <div class="container" id="body-content">
-      <div class="row mb-4" id="content-header">
-           <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">Option</div>
-      </div>
+  <div style="    margin-left: 100px;
+  margin-right: 50px;" id="body-content">
+    <div class="row mb-4" id="content-header">
+      <div class="col-md-2">Name</div>
+      <div class="col-md-2">ID</div>
+      <div class="col-md-2">Date</div>
+      <div class="col-md-2">Size</div>
+      <div class="col-md-2">Author</div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
+    <div class="row py-2 mb-3" id="content1">
+      <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+      <div style="margin-left:120px">The Photo</div>
+      <div style="margin-left:120px">id 217.019.94D4</div>
+      <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+      <div style="margin-left:120px">50kb</div>
+      <div style="margin-left:120px">By mikado theme</div>
+      <div style="margin-left:100px">
+          <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
       </div>
+    </div>
 
-          <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-          <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
-      <div class="row p-2 mb-2" id="content1">
-          <div class="col-md-3">Number</div>
-            <div class="col-md-3">Firstname</div>
-             <div class="col-md-3">Lastname</div>
-              <div class="col-md-3">
-                <button class="btn btn-success btn-sm">View file</button>
-              </div>
-      </div>
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
 
+    <div class="row py-2 mb-3" id="content1">
+        <div style="margin-left:30px; margin-left:30px"><i class="fa fa-credit-card-alt"></i></div>
+        <div style="margin-left:120px">The Photo</div>
+        <div style="margin-left:120px">id 217.019.94D4</div>
+        <div style="margin-left:120px"><i class="fa fa-envelope"></i> 10.08.18</div>
+        <div style="margin-left:120px">50kb</div>
+        <div style="margin-left:120px">By mikado theme</div>
+        <div style="margin-left:100px">
+            <button class="btn btn-success btn-sm px-4 ml-3">Order</button>
+        </div>
+    </div>
+
+      
   </div>
 
 </body>
